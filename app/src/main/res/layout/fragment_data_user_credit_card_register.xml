@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_user_acount_register"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_credit_card_user_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/background_white_border_gray"
+            android:hint="Número de tarjeta"
+            android:inputType="text"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_user_acount_register" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_15_register_chef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".15" />
+
+        <CheckBox
+            android:id="@+id/cb_term_and_conditionals_register_chef"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="@+id/gl_15_register_chef"
+            app:layout_constraintStart_toStartOf="@+id/et_credit_card_user_register"
+            app:layout_constraintTop_toBottomOf="@+id/et_credit_card_user_register" />
+
+        <TextView
+            android:id="@+id/et_term_and_conditions_user_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Términos y condiciones"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/cb_term_and_conditionals_register_chef"
+            app:layout_constraintStart_toEndOf="@+id/gl_15_register_chef"
+            app:layout_constraintTop_toTopOf="@+id/cb_term_and_conditionals_register_chef" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/btn_finish_register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_term_and_conditions_user_register" />
+
+
+        <Button
+            android:id="@+id/btn_finish_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_green_btn"
+            android:text="Registrar"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/LeadsFragment"
+    android:id="@+id/navigation">
+
+    <fragment
+        android:id="@+id/LeadsFragment"
+        android:name="com.worklin.leads.leadsModule.view.LeadsFragment"
+        android:label="Leads"
+        tools:layout="@layout/leads_fragment" />
+
+
+</navigation>

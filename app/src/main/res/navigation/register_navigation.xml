@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/DataUserPersonalRegisterFragment"
+    android:id="@+id/register_navigation">
+
+    <fragment
+        android:id="@+id/DataUserPersonalRegisterFragment"
+        android:name="com.worklin.leads.registro.view.fragments.DataUserPersonalRegisterFragment"
+        android:label="Datos personales"
+        tools:layout="@layout/fragment_data_user_personal_register" >
+        <action
+            android:id="@+id/action_DataPersonal_to_dataAcount_register"
+            app:destination="@id/DataUserAcountRegisterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DataUserAcountRegisterFragment"
+        android:name="com.worklin.leads.registro.view.fragments.DataUserAcountRegisterFragment"
+        android:label="Datos de la cuenta"
+        tools:layout="@layout/fragment_data_user_acount_register" >
+        <action
+            android:id="@+id/action_dataAcount_to_dataCreditCard_register"
+            app:destination="@id/DataUserCreditCardRegisterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DataUserCreditCardRegisterFragment"
+        android:name="com.worklin.leads.registro.view.fragments.DataUserCreditCardRegisterFragment"
+        android:label="Datos bancarios"
+        tools:layout="@layout/fragment_data_user_credit_card_register" />
+
+
+</navigation>

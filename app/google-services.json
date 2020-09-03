@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "681607339423",
+    "firebase_url": "https://leads-53ebc.firebaseio.com",
+    "project_id": "leads-53ebc",
+    "storage_bucket": "leads-53ebc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681607339423:android:2bd80b2cba5ceb051cb1aa",
+        "android_client_info": {
+          "package_name": "com.worklin.leads"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681607339423-c6dn1o1ept20srjhcumrc071m92t7v4d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo9qV5d4JpJk8RONHotzJwzF0n-WGwsAs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681607339423-c6dn1o1ept20srjhcumrc071m92t7v4d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
